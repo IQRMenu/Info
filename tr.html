@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta property="og:title" content="Kafeniz için etkileşimli menü">
+  <meta property="og:description"
+    content="Kafeniz, misafirlerin gözünde daha modern ve teknolojik görünecek. QR kodu ile etkileşimli bir menü, konforunuza önem verdiğinizi ve trendleri takip ettiğinizi vurgular.">
+  <meta property="og:image" content="https://iqrmenu.github.io/InfoRU/img/header__foto.png">
+  <meta property="og:url" content="https://iqrmenu.github.io/InfoRU/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQRMenu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer=""></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__elements">
+        <a href="#header" class="nav__logo">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="nav__links">
+          <a href="#what">Neden?</a>
+          <a href="#cases">Örnekler</a>
+          <a href="#price">Fiyat</a>
+          <a href="#quick-start">Menü Oluşturma</a>
+          <a href="#order" class="link-order">Sipariş Ver</a>
+        </div>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__elements">
+        <div class="header__content">
+          <h1>
+            <span class="gradient-text">Etkileşimli Menü</span> kafeniz için
+          </h1>
+          <ul>
+            <li>Menünüz birden fazla dilde</li>
+            <li>Fiyatları kolayca değiştirebilirsiniz</li>
+            <li>Misafirleriniz beklemiyor!</li>
+          </ul>
+        </div>
+        <img src="./img/header__foto.png" alt="header-image">
+      </div>
+  </header>
+
+  <section class="what" id="what">
+    <div class="container">
+      <h2>Neden?</h2>
+      <div class="what__item what__item_right">
+        <img src="./img/1.png" alt="">
+        <div class="what__text-block">
+          <h3>Dikkat çekmek</h3>
+          <p>
+            Kafeniz gözden kaçmayacak! QR kodu ile etkileşimli bir menü, potansiyel müşterilerin dikkatini çeker.
+            Kapıda basit bir tarayıcı, menünüze erişim sağlar ve farklı dillerdeki mevcut bilgiler, her geçeni
+            kafenizin misafirlerinin konforuna önem verdiğine ikna eder.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/2.png" alt="">
+        <div class="what__text-block">
+          <h3>Müşterinin dilinde menü</h3>
+          <p>
+            Müşterilerinizi anladığınızı gösterin! Menünüz Rusça, İngilizce, İspanyolca ve diğer dillerde mevcuttur.
+            Artık farklı ülkelerden gelen misafirler, yemekleri kolayca tanıyabilir ve çeviri için zaman kaybetmeden
+            seçim yapabilirler.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/3.png" alt="">
+        <div class="what__text-block">
+          <h3>Müşteriniz beklemiyor!</h3>
+          <p>
+            Beklemeyi azaltın! Menümüz sayesinde, müşteriler önceden yemekleri seçebilir ve sepete ekleyebilirler.
+            Bu, sipariş sürecini hızlandırır ve misafirlerin beklemek yerine zamanlarını keyifle geçirmelerini sağlar.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/4.png" alt="">
+        <div class="what__text-block">
+          <h3>Menüyü kolayca değiştirme</h3>
+          <p>
+            Menü güncellemeleri için zorlukları unutun! Artık tek yapmanız gereken bir Google sayfasını düzenlemek,
+            değişiklikler anında sitede görünecektir. Hızlı, kolay ve ek maliyet yok.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/5.png" alt="">
+        <div class="what__text-block">
+          <h3>Farklı kafeler için benzersiz menü</h3>
+          <p>
+            Birden fazla kafeniz varsa, menünün güncel kalması daha kolay hale geldi. Tüm işletmeler için bir çözüm:
+            verileri bir tabloda güncelleyin ve değişiklikler otomatik olarak tüm ağa uygulanacaktır.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/6.png" alt="">
+        <div class="what__text-block">
+          <h3>Menü baskı maliyetlerinde tasarruf</h3>
+          <p>
+            Baskı masraflarını azaltın! Etkileşimli bir menü, yeni menülerin düzenli olarak basılmasını gerektirmez.
+            Kafede QR kodları yerleştirmek yeterlidir ve misafirleriniz her zaman güncellenmiş bilgilere erişebilir.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/7.png" alt="">
+        <div class="what__text-block">
+          <h3>Modern bir imaj</h3>
+          <p>
+            Kafeniz, misafirlerin gözünde daha modern ve teknolojik görünecek. QR kodu ile etkileşimli bir menü,
+            konforunuza önem verdiğinizi ve trendleri takip ettiğinizi vurgular. Bu, rekabet avantajı haline gelebilir.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/8.png" alt="">
+        <div class="what__text-block">
+          <h3>Siparişlerde daha az hata</h3>
+          <p>
+            Müşteriler, site üzerinden yemekleri sepete eklediğinde, garsona sözlü bilgi iletimiyle ilgili hata riski
+            azalır. Bu, hizmet kalitesini artırır ve yanlış anlamaların olasılığını azaltır.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/9.png" alt="">
+        <div class="what__text-block">
+          <h3>Temas azaltma - güvenlik</h3>
+          <p>
+            Hijyen konusuna daha fazla dikkat edilen koşullarda (örneğin, pandemiden sonra), müşteriler menü ile
+            etkileşimde bulunurken fiziksel bir menü yerine telefonları aracılığıyla daha güvende hissedebilirler.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="container">
+      <h2>Örnekler</h2>
+      <div class="cases__list">
+        <a href="https://iqrmenu.github.io/CIAO-CACAO/" class="cases__item" target="_blank">
+          <img src="./img/cases__logo1.png" alt="">
+        </a>
+        <a href="https://iskanderbeycafe.github.io/menu/index.html" class="cases__item" target="_blank">
+          <img src="./img/cases__logo2.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="price">
+    <div class="container">
+      <h2>Fiyat</h2>
+      <div class="prices__list">
+        <div class="prices__item price-box">
+          <h4>Temel</h4>
+          <p class="price-box__cost">
+            <span>1500 ₺</span>
+            ayda
+          </p>
+          <p class="text_green">Bu sadece ayda 3-4 yeni ziyaretçi</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Veritabanına erişim
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Genel QR kodu
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              3 dil
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Özel tasarım
+            </li>
+          </ul>
+        </div>
+        <div class="prices__item price-box price-box_pro">
+          <h4>Genişletilmiş</h4>
+          <p class="price-box__cost">
+            <span>2000 ₺</span>
+            ayda
+          </p>
+          <p class="text_green">Bu sadece ayda 5-6 yeni ziyaretçi</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Veritabanına erişim
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Her masa için QR kodu
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Dil kısıtlaması yok
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Özel tasarım
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Sipariş fonksiyonu
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Sipariş analizleri toplama
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-start" id="quick-start">
+    <div class="container">
+      <h2>Menü Oluşturma</h2>
+      <ol class="quick-start__list">
+        <li>
+          <h3>Talebinizi bırakın</h3>
+          <p>
+            Web sitemizde <a href="#order">formu</a> doldurun veya <a
+              href="https://wa.me/5491161349627">WhatsApp</a> üzerinden bize yazın. 12 saat içinde sizinle iletişime geçeceğiz.
+          </p>
+        </li>
+        <li>
+          <h3>Gerekli bilgileri gönderin</h3>
+          <p>
+            Menülerinizi yemek açıklamaları ve fiyatları ile birlikte hazırlayın, ayrıca her porsiyonun fotoğraflarını ekleyin.
+          </p>
+        </li>
+        <li>
+          <h3>Toplantı ve sözleşme imzası</h3>
+          <p>
+            Temsilcimiz sizinle buluşacak, <button class="open-contract">sözleşmeyi</button> imzalayacak ve tüm detayları
+            tartışacaktır.
+          </p>
+        </li>
+        <li>
+          <h3>Menünün anında oluşturulması</h3>
+          <p>
+            Sözleşme imzalandıktan sonra, etkileşimli menünüzü oluşturacağız ve nasıl düzenleyeceğinizi öğreteceğiz.
+          </p>
+        </li>
+        <li>
+          <h3>Menünün internete yüklenmesi</h3>
+          <p>
+            Etkileşimli menünüz, müşterilerinizin kolayca erişebilmesi için internette mevcut olacaktır.
+          </p>
+        </li>
+        <li>
+          <h3>QR kodlarının oluşturulması</h3>
+          <p>
+            Menünüz için QR kodları oluşturuyoruz, böylece hızlı ve kolay bir şekilde erişilebilir hale geliyor.
+          </p>
+        </li>
+        <li>
+          <h3>QR kodlarının basılması</h3>
+          <p>
+            Bunları sizin için kendimiz basacağız: <br>
+            - <strong>Büyük QR kodu:</strong> Görünür yerlere yerleştirmek için yapışkan kağıt. <br>
+            - <strong>20 küçük QR kodu:</strong> Her masa için. <br>
+            Ayrıca, basılı QR kodlarını işletmenizde yerleştirmenize yardımcı olacağız.
+          </p>
+        </li>
+
+        <h3 class="quick-start__finish-title">Tebrikler, etkileşimli menünüz hazır!</h3>
+
+        <li>
+          <h3>Ek seçenekler</h3>
+          <p>
+            Ek QR kodları talep edebilirsiniz: <br>
+            - Büyük kod — <strong>150 ₺</strong> <br>
+            - 10 küçük kod — <strong>150 ₺ peso</strong>
+          </p>
+        </li>
+        <li>
+          <h3>Aylık ödeme</h3>
+          <p>
+            O zaman sadece seçtiğiniz tarifeye göre aylık abonelik ücreti ödemeniz gerekecek.
+          </p>
+        </li>
+      </ol>
+
+      <ol class="quick-start__list">
+
+      </ol>
+    </div>
+
+  </section>
+
+  <section class="contact" id="order">
+    <div class="container">
+      <h2>Sipariş Ver</h2>
+      <h3>Bize yazın ve 24 saat içinde sizinle iletişime geçeceğiz</h3>
+      <div class="contact__list">
+        <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+        <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+        <a class="email" href="mailto:interactivemenuqr@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <form target="form-submit" method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAEOGmx-rY-vMroj6afvsC1keaW4Yxz76MikQ2gXXJCpNcIg/formResponse">
+        <iframe name="form-submit"></iframe>
+        <div class="form-submit">
+          <h3>Talebiniz gönderildi</h3>
+        </div>
+        <label for="name">Adınız</label>
+        <input id="name" name="entry.1646956788" type="text" placeholder="Adınızı girin" required>
+        <label for="tel">Telefonunuz</label>
+        <input id="tel" name="entry.1420576568" type="tel" placeholder="Telefonunuzu girin" required>
+        <button type="submit">Gönder</button>
+        <p>
+          Kişisel verileriniz korunmaktadır. Gizlilik politikası metni <span
+            class="protection">burada</span> mevcuttur.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer__elements">
+        <div class="footer__contact">
+          <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+          <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+            <!-- <a class="instagram" href="https://www.instagram.com/alex_it_teacher/"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+
+        <a class="footer__mailLink" href="mailto:interactivemenuqr@gmail.com">interactivemenuqr@gmail.com</a>
+
+        <a href="#header" class="footer__logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-block">
+    <div class="contract">
+      <h3>Etkileşimli Menü Oluşturma ve Yönetim Hizmetleri Sözleşmesi Planı</h3>
+      <h4>1. Sözleşmenin Amacı</h4>
+      <ol>
+        <li>
+          <p><strong>Sağlayıcı, şunları taahhüt eder:</strong></p>
+          <ol>
+            <li>Bir kafe veya restoran için etkileşimli bir menü oluşturmak.</li>
+            <li>Menüyü gösteren bir web sitesi ve uygulama geliştirmek.</li>
+            <li>Müşterinin işletme tarzına uygun web sitesi tasarımını ayarlamak.</li>
+            <li>Menüyü depolamak ve yönetmek için bir tablo oluşturmak (Google Sheets).</li>
+            <li>QR kodları oluşturmak, basmak ve müşteriye sağlamak.</li>
+            <li>Müşteriyi veritabanını ve menüyü değiştirmek için tablo kullanma konusunda eğitmek.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Müşteri, şunları taahhüt eder:</strong></p>
+          <ol>
+            <li>Hizmetlerin ilk ayının maliyetini (kurulum ve lansman dahil) ödemek.</li>
+            <li>Menüyü, porsiyonların resimlerini ve gerekli diğer bilgileri sağlamak.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>2. Çalışma Aşamaları</h4>
+      <ol>
+        <li>
+          <p><strong>Birinci aşama (hazırlık):</strong></p>
+          <ol>
+            <li>Müşteri menüyü ve yemeklerin resimlerini sağlar.</li>
+            <li>Sağlayıcı web sitesi tasarımını onaylar.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>İkinci aşama (oluşturma ve lansman):</strong></p>
+          <ol>
+            <li>Web sitesi ve uygulama geliştirilir.</li>
+            <li>Menü veritabanı ile tablo ayarlanır.</li>
+            <li>QR kodları oluşturulur ve basılır.</li>
+            <li>QR kodları müşteriye teslim edilir.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Üçüncü aşama (eğitim):</strong></p>
+          <ol>
+            <li>Müşteriye tablo aracılığıyla menüyü yönetme konusunda eğitim verilir.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Dördüncü aşama (aylık bakım):</strong></p>
+          <ol>
+            <li>İkinci aydan itibaren, müşteri menü için aylık kira ödemesi yapar _____.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>3. Tarafların Yükümlülükleri ve Hakları</h4>
+      <ol>
+        <li>
+          <p><strong>Sağlayıcı, şunları taahhüt eder:</strong></p>
+          <ol>
+            <li>Belirtilen süre içinde tüm işleri tamamlamak.</li>
+            <li>Tamamlanan menüye erişim sağlamak ve müşteriyi düzenleme konusunda eğitmek.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Müşteri, şunları taahhüt eder:</strong></p>
+          <ol>
+            <li>İş için gerekli bilgileri zamanında sağlamak.</li>
+            <li>Hizmetleri sözleşme şartlarına göre ödemek.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>4. Maliyetler ve Ödeme Şekli</h4>
+      <ol>
+        <li>Hizmetlerin ilk ayı için ödeme _____'dir.</li>
+        <li>İkinci aydan itibaren menünün aylık kirası _____'dir.</li>
+        <li>Her 3 ayda bir, aylık ödeme miktarı enflasyona bağlı olarak yeniden hesaplanacaktır, çünkü miktar
+          Arjantin Türk Lirası cinsindendir.</li>
+        <li>Ödeme, her ayın _____'inde yapılmalıdır.</li>
+      </ol>
+
+      <h4>5. Tarafların Sorumluluğu</h4>
+      <ol>
+        <li>Sağlayıcı, müşteri tarafından tabloda yapılan hatalardan veya değişikliklerden sorumlu değildir.</li>
+        <li>Müşteri, veritabanına erişimi üçüncü şahıslarla paylaşmamayı taahhüt eder.</li>
+      </ol>
+
+      <h4>6. Ek Koşullar</h4>
+      <ol>
+        <li>Web sitesi ve uygulamanın tüm hakları sağlayıcıya aittir.</li>
+        <li>Müşteri, menüyü düzenlemek için sınırlı erişim alır.</li>
+        <li>Sözleşmenin feshi durumunda, müşteri sağlanan tüm materyalleri (QR kodları vb.) iade etmeyi taahhüt eder.</li>
+      </ol>
+
+      <h4>7. Sözleşmenin Geçerliliği</h4>
+      <ol>
+        <li>Sözleşme, imzalandığı tarihten itibaren geçerli olacak ve her iki tarafın yükümlülüklerini yerine getirmesi
+          ile sona erecektir.</li>
+      </ol>
+
+      <h4>8. İmzalar</h4>
+      <p>Sağlayıcı: _____________</p>
+      <p>Müşteri: ______________</p>
+    </div>
+    <div class="data-protection">
+      <h3>
+        Kişisel Verilerin İşlenmesi Politikası
+      </h3>
+      <h4>
+        1. BİLGİLERİN İŞLENMESİNE İLİŞKİN KOŞULLAR VE AMAÇLAR
+      </h4>
+      <p>
+        Site Yöneticisi, kullanıcının kişisel verilerini rızası ile, Sitede sunulan hizmetleri sağlamak amacıyla işler.
+      </p>
+      <h4>
+        2. KULLANICILARIN KİŞİSEL VERİLERİNİN İŞLENMESİ
+      </h4>
+      <p>
+        Kişisel verilerin işlenmesi, aşağıdaki ilkelere dayanarak gerçekleştirilir:
+        <br>
+        a) Kişisel verilerin işlenmesi amaçlarının ve yöntemlerinin yasallığı ve iyi niyet;
+        <br>
+        b) Kişisel verilerin işlenmesi amaçlarının, kişisel verilerin toplanması sırasında önceden tanımlanmış ve
+        beyan edilmiş amaçlarla örtüşmesi;
+        <br>
+        c) İşlenen kişisel verilerin hacmi ve niteliği, kişisel verilerin işlenme yöntemleri ve işleme amaçları ile
+        örtüşmesi;
+        <br>
+        d) Birbirleriyle uyumsuz amaçlar için oluşturulan kişisel verileri içeren veri tabanlarının birleştirilmesinin
+        yasaklanması.
+      </p>
+      <h4>
+        3. KİŞİSEL VERİLERİN SİLİNMESİ
+      </h4>
+      <p>
+        Kullanıcının kişisel verileri, kullanıcının yazılı talebi üzerine serbest formatta silinir, ayrıca Site
+        Yöneticisi tarafından takdiren silinebilir.
+      </p>
+      <h4>
+        4. KULLANICILARIN BİLGİLERİNİN KORUNMASI İÇİN ALINAN ÖNLEMLER
+      </h4>
+      <p>
+        Site Yöneticisi, kullanıcının kişisel verilerinin yetkisiz veya kazara erişim, yok etme, değiştirme, engelleme,
+        kopyalama, dağıtım ve diğer yasadışı işlemlerden korunmasını sağlamak amacıyla yasal teknik ve organizasyonel
+        önlemler alır.
+      </p>
+
+    </div>
+  </div>
+</body>
+
+</html>
