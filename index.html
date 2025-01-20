@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta property="og:title" content="Menú interactivo para tu café">
+  <meta property="og:description"
+    content="Tu café se verá más moderno y tecnológico a los ojos de los invitados. Un menú interactivo con código QR subraya que te preocupas por la comodidad y sigues las tendencias.">
+  <meta property="og:image" content="https://iqrmenu.github.io/InfoRU/img/header__foto.png">
+  <meta property="og:url" content="https://iqrmenu.github.io/InfoRU/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQRMenu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer=""></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__elements">
+        <a href="#header" class="nav__logo">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="nav__links">
+          <a href="#what">Ventajas</a>
+          <a href="#cases">Casos</a>
+          <a href="#price">Precio</a>
+          <a href="#quick-start">Creando un menú</a>
+          <a href="#order" class="link-order">Ordenar</a>
+        </div>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__elements">
+        <div class="header__content">
+          <h1>
+            <span class="gradient-text">Menú interactivo</span> para tu café
+          </h1>
+          <ul>
+            <li>Tu menú en varios idiomas</li>
+            <li>Puedes cambiar los precios fácilmente</li>
+            <li>¡Tus visitantes no esperan!</li>
+          </ul>
+        </div>
+        <img src="./img/header__foto.png" alt="header-image">
+      </div>
+  </header>
+
+  <section class="what" id="what">
+    <div class="container">
+      <h2>Ventajas</h2>
+      <div class="what__item what__item_right">
+        <img src="./img/1.png" alt="">
+        <div class="what__text-block">
+          <h3>Atraer atención</h3>
+          <p>
+            ¡Tu café no pasará desapercibido! Un menú interactivo con código QR atrae la atención de los clientes
+            potenciales. Un simple escáner en la puerta da acceso a tu menú, y la información sobre la disponibilidad en
+            diferentes idiomas convence a cada transeúnte de que tu café se preocupa por la comodidad de los invitados.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/2.png" alt="">
+        <div class="what__text-block">
+          <h3>Menú en el idioma del cliente</h3>
+          <p>
+            ¡Muestra a los clientes que los entiendes! Tu menú está disponible en ruso, inglés, español y otros idiomas.
+            Ahora los huéspedes de diferentes países podrán familiarizarse fácilmente con los platos y hacer su elección
+            sin perder tiempo en traducción.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/3.png" alt="">
+        <div class="what__text-block">
+          <h3>¡Tu cliente no espera!</h3>
+          <p>
+            ¡Reduce la espera! Gracias a nuestro menú, los clientes pueden elegir platos con anticipación y agregarlos
+            al carrito. Esto acelera el proceso de pedido y permite a los huéspedes disfrutar de su tiempo, en lugar de
+            esperar.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/4.png" alt="">
+        <div class="what__text-block">
+          <h3>Fácil de cambiar el menú</h3>
+          <p>
+            ¡Olvídate de las dificultades para actualizar el menú! Ahora todo lo que necesitas es editar una hoja de
+            cálculo de Google, y los cambios aparecerán instantáneamente en el sitio. Rápido, fácil y sin costos
+            adicionales.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/5.png" alt="">
+        <div class="what__text-block">
+          <h3>Menú único para tu red de cafés</h3>
+          <p>
+            Si tienes varios cafés, mantener la actualidad del menú se ha vuelto más fácil. Una solución para todos los
+            establecimientos: actualiza los datos en una tabla y los cambios se aplicarán automáticamente a toda la red.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/6.png" alt="">
+        <div class="what__text-block">
+          <h3>Ahorro en impresión de menús</h3>
+          <p>
+            ¡Reduce los gastos de impresión! Un menú interactivo elimina la necesidad de imprimir nuevos menús
+            regularmente. Basta con colocar códigos QR en el café, y tus invitados siempre verán información
+            actualizada.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/7.png" alt="">
+        <div class="what__text-block">
+          <h3>Imagen moderna</h3>
+          <p>
+            Tu café se verá más moderno y tecnológico a los ojos de los invitados. Un menú interactivo con código QR
+            subraya que te preocupas por la comodidad y sigues las tendencias. Esto puede convertirse en una ventaja
+            competitiva.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/8.png" alt="">
+        <div class="what__text-block">
+          <h3>Menos errores en los pedidos</h3>
+          <p>
+            Cuando los clientes agregan platos al carrito a través del sitio, se reduce el riesgo de errores
+            relacionados con la transmisión verbal de información al camarero. Esto mejora la calidad del servicio y
+            disminuye la probabilidad de malentendidos.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/9.png" alt="">
+        <div class="what__text-block">
+          <h3>Reducción de contacto - seguridad</h3>
+          <p>
+            En condiciones de mayor atención a la higiene (por ejemplo, después de la pandemia), los clientes pueden
+            sentirse más seguros interactuando con el menú a través de su teléfono, en lugar de un menú físico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="container">
+      <h2>Casos</h2>
+      <div class="cases__list">
+        <a href="https://iqrmenu.github.io/CIAO-CACAO/" class="cases__item" target="_blank">
+          <img src="./img/cases__logo1.png" alt="">
+        </a>
+        <a href="https://iskanderbeycafe.github.io/menu/index.html" class="cases__item" target="_blank">
+          <img src="./img/cases__logo2.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="price">
+    <div class="container">
+      <h2>Precio</h2>
+      <div class="prices__list">
+        <div class="prices__item price-box">
+          <h4>Básico</h4>
+          <p class="price-box__cost">
+            <span>$35 000</span>
+            al mes
+          </p>
+          <p class="text_green">Eso es sólo 3-4 nuevos visitantes por mes</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Acceso a la base de datos
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Código QR general
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              3 idiomas
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Diseño personalizado
+            </li>
+          </ul>
+        </div>
+        <div class="prices__item price-box price-box_pro">
+          <h4>Ampliado</h4>
+          <p class="price-box__cost">
+            <span>$55 000</span>
+            al mes
+          </p>
+          <p class="text_green">Eso es sólo 5-6 nuevos visitantes por mes</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Acceso a la base de datos
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Código QR para cada mesa
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Sin restricciones de idiomas
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Diseño personalizado
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Función de pedido
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Recopilación de análisis de pedidos
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-start" id="quick-start">
+    <div class="container">
+      <h2>Creando un menú</h2>
+      <ol class="quick-start__list">
+        <li>
+          <h3>Dejá tu solicitud</h3>
+          <p>
+            Completá <a href="#order">el formulario</a> en nuestro sitio web o escribinos por <a
+              href="https://wa.me/5491161349627">WhatsApp</a>. Nos comunicaremos con usted dentro de las 12 horas.
+          </p>
+        </li>
+        <li>
+          <h3>Enviá la información necesaria</h3>
+          <p>
+            Prepará tu menú con descripciones y precios de los platos, además de fotos de cada porción individual.
+          </p>
+        </li>
+        <li>
+          <h3>Reunión y firma del contrato</h3>
+          <p>
+            Nuestro representante se reunirá con vos para firmar <button class="open-contract">el contrato</button> y
+            discutir todos los detalles.
+          </p>
+        </li>
+        <li>
+          <h3>Creación del menú en el momento</h3>
+          <p>
+            Una vez firmado el contrato, crearemos tu menú interactivo y te enseñaremos cómo editarlo.
+          </p>
+        </li>
+        <li>
+          <h3>Subida del menú a internet</h3>
+          <p>
+            Tu menú interactivo estará disponible en internet para que tus clientes puedan acceder fácilmente.
+          </p>
+        </li>
+        <li>
+          <h3>Generación de los códigos QR</h3>
+          <p>
+            Creamos códigos QR para tu menú, haciendo que sea accesible de forma rápida y sencilla.
+          </p>
+        </li>
+        <li>
+          <h3>Impresión de los códigos QR</h3>
+          <p>
+            Lo imprimiremos para usted nosotros mismos: <br>
+            - <strong>Código QR grande:</strong> Papel adhesivo para colocarlo en lugares visibles, como la entrada.
+            <br>
+            - <strong>20 códigos QR pequeños:</strong> Para cada mesa del establecimiento. <br>
+            También te ayudaremos a colocar códigos QR impresos en tu establecimiento.
+          </p>
+        </li>
+
+        <h3 class="quick-start__finish-title">¡Felicitaciones, su menú interactivo está listo!</h3>
+
+        <li>
+          <h3>Opciones adicionales</h3>
+          <p>
+            Podés solicitar códigos QR adicionales: <br>
+            - Código grande — <strong>5000 pesos</strong> <br>
+            - 10 códigos pequeños — <strong>5000 pesos</strong>
+          </p>
+        </li>
+        <li>
+          <h3>Pago mensual</h3>
+          <p>
+            Entonces sólo tendrás que pagar una cuota de suscripción mensual en función de la tarifa elegida.
+          </p>
+        </li>
+      </ol>
+
+
+      <ol class="quick-start__list">
+
+      </ol>
+    </div>
+
+  </section>
+
+  <section class="contact" id="order">
+    <div class="container">
+      <h2>Ordenar</h2>
+      <h3>Escríbenos y nos pondremos en contacto contigo en 24 horas</h3>
+      <div class="contact__list">
+        <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+        <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+        <a class="email" href="mailto:interactivemenuqr@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <form target="form-submit" method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAEOGmx-rY-vMroj6afvsC1keaW4Yxz76MikQ2gXXJCpNcIg/formResponse">
+        <iframe name="form-submit"></iframe>
+        <div class="form-submit">
+          <h3>Tu solicitud ha sido enviada</h3>
+        </div>
+        <label for="name">Tu nombre</label>
+        <input id="name" name="entry.1646956788" type="text" placeholder="Introduce tu nombre" required>
+        <label for="tel">Tu teléfono</label>
+        <input id="tel" name="entry.1420576568" type="tel" placeholder="Introduce tu teléfono" required value="+54">
+        <button type="submit">Enviar</button>
+        <p>
+          Tus datos personales están protegidos. El texto completo de la política de privacidad está disponible <span
+            class="protection">aquí</span>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer__elements">
+        <div class="footer__contact">
+          <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+          <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+            <!-- <a class="instagram" href="https://www.instagram.com/alex_it_teacher/"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+
+        <a class="footer__mailLink" href="mailto:interactivemenuqr@gmail.com">interactivemenuqr@gmail.com</a>
+
+        <a href="#header" class="footer__logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <div class="modal-block">
+    <div class="contract">
+      <h3>Plan del Contrato para Servicios de Creación y Gestión de un Menú Interactivo</h3>
+      <h4>1. Objeto del Contrato</h4>
+      <ol>
+        <li>
+          <p><strong>El Proveedor se compromete a:</strong></p>
+          <ol>
+            <li>Crear un menú interactivo para un café o restaurante.</li>
+            <li>Desarrollar un sitio web y una aplicación que muestren el menú.</li>
+            <li>Ajustar el diseño del sitio al estilo del establecimiento del cliente.</li>
+            <li>Crear una tabla para almacenar y gestionar el menú (Google Sheets).</li>
+            <li>Generar códigos QR, imprimirlos y proporcionarlos al cliente.</li>
+            <li>Capacitar al cliente en el uso de la tabla para modificar la base de datos y el menú.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>El Cliente se compromete a:</strong></p>
+          <ol>
+            <li>Pagar el costo del primer mes de servicios (incluyendo configuración y lanzamiento).</li>
+            <li>Proporcionar el menú, imágenes de las porciones y cualquier otra información necesaria.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>2. Etapas del Trabajo</h4>
+      <ol>
+        <li>
+          <p><strong>Primera etapa (preparación):</strong></p>
+          <ol>
+            <li>El cliente proporciona el menú e imágenes de los platos.</li>
+            <li>El proveedor acuerda el diseño del sitio web.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Segunda etapa (creación y lanzamiento):</strong></p>
+          <ol>
+            <li>Desarrollo del sitio web y la aplicación.</li>
+            <li>Configuración de la tabla con la base de datos del menú.</li>
+            <li>Generación e impresión de los códigos QR.</li>
+            <li>Entrega de los códigos QR al cliente.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Tercera etapa (capacitación):</strong></p>
+          <ol>
+            <li>Capacitación al cliente en la gestión del menú mediante la tabla.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Cuarta etapa (mantenimiento mensual):</strong></p>
+          <ol>
+            <li>A partir del segundo mes, el cliente paga un alquiler mensual del menú de _____.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>3. Obligaciones y Derechos de las Partes</h4>
+      <ol>
+        <li>
+          <p><strong>El Proveedor se compromete a:</strong></p>
+          <ol>
+            <li>Completar todos los trabajos dentro del plazo indicado en el anexo del contrato.</li>
+            <li>Proporcionar acceso al menú finalizado y capacitar al cliente para editarlo.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>El Cliente se compromete a:</strong></p>
+          <ol>
+            <li>Proporcionar la información necesaria para el trabajo de manera oportuna.</li>
+            <li>Pagar los servicios según los términos y condiciones del contrato.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>4. Costos y Forma de Pago</h4>
+      <ol>
+        <li>El pago por el primer mes de servicios es de _____.</li>
+        <li>El alquiler mensual del menú es de _____, a partir del segundo mes.</li>
+        <li>Cada 3 meses se recalculará el monto del pago mensual dependiendo de la inflación, ya que el monto está
+          indicado en pesos argentinos.</li>
+        <li>El pago debe realizarse antes del día _____ de cada mes.</li>
+      </ol>
+
+      <h4>5. Responsabilidad de las Partes</h4>
+      <ol>
+        <li>El proveedor no se hace responsable de los errores o cambios realizados por el cliente en la tabla.</li>
+        <li>El cliente se compromete a no compartir el acceso a la base de datos con terceros.</li>
+      </ol>
+
+      <h4>6. Condiciones Adicionales</h4>
+      <ol>
+        <li>Todos los derechos del sitio web y la aplicación pertenecen al proveedor.</li>
+        <li>El cliente recibe acceso limitado para editar el menú.</li>
+        <li>En caso de rescisión del contrato, el cliente se compromete a devolver todos los materiales proporcionados
+          (códigos QR, etc.).</li>
+      </ol>
+
+      <h4>7. Vigencia del Contrato</h4>
+      <ol>
+        <li>El contrato entra en vigor a partir de su firma y permanecerá vigente hasta que ambas partes cumplan con sus
+          obligaciones.</li>
+      </ol>
+
+      <h4>8. Firmas</h4>
+      <p>Proveedor: _____________</p>
+      <p>Cliente: ______________</p>
+    </div>
+    <div class="data-protection">
+      <h3>
+        Política de Tratamiento de Datos Personales
+      </h3>
+      <h4>
+        1. CONDICIONES Y PROPÓSITOS DEL TRATAMIENTO DE LA INFORMACIÓN
+      </h4>
+      <p>
+        El Administrador del Sitio realiza el tratamiento de los datos personales del usuario con su consentimiento, con
+        el propósito de prestar los servicios ofrecidos en el Sitio.
+      </p>
+      <h4>
+        2. TRATAMIENTO DE DATOS PERSONALES DE LOS USUARIOS
+      </h4>
+      <p>
+        El tratamiento de los datos personales se lleva a cabo sobre la base de los principios de:
+        <br>
+        a) Legalidad de los propósitos y métodos de tratamiento de los datos personales y buena fe;
+        <br>
+        b) Correspondencia entre los propósitos del tratamiento de los datos personales y los propósitos previamente
+        definidos y declarados al recopilar los datos personales;
+        <br>
+        c) Correspondencia entre el volumen y la naturaleza de los datos personales procesados, los métodos de
+        tratamiento de los datos personales y los propósitos del tratamiento;
+        <br>
+        d) Prohibición de combinar bases de datos que contengan datos personales creadas para propósitos incompatibles
+        entre sí.
+      </p>
+      <h4>
+        3. ELIMINACIÓN DE DATOS PERSONALES
+      </h4>
+      <p>
+        Los datos personales del usuario se eliminan a solicitud escrita del usuario en formato libre, así como a
+        discreción del Administrador del Sitio.
+      </p>
+      <h4>
+        4. MEDIDAS DE PROTECCIÓN DE LA INFORMACIÓN DE LOS USUARIOS
+      </h4>
+      <p>
+        El Administrador del Sitio adopta medidas técnicas y organizativas legales con el fin de garantizar la
+        protección de los datos personales del usuario contra accesos no autorizados o accidentales, destrucción,
+        modificación, bloqueo, copia, distribución, así como contra otras acciones ilícitas.
+      </p>
+
+    </div>
+  </div>
+</body>
+
+</html>

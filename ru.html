@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta property="og:title" content="Интерактивное меню для вашего кафе">
+  <meta property="og:description" content="Ваше кафе станет выглядеть более современно и технологично в глазах гостей. Интерактивное меню с QR-кодом подчеркивает, что вы заботитесь о комфорте и следуете трендам.">
+  <meta property="og:image" content="https://iqrmenu.github.io/InfoRU/img/header__foto.png">
+  <meta property="og:url" content="https://iqrmenu.github.io/InfoRU/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQRMenu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer=""></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__elements">
+        <a href="#header" class="nav__logo">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="nav__links">
+          <a href="#what">Преимущества</a>
+          <a href="#cases">Кейсы</a>
+          <a href="#price">Стоимость</a>
+          <a href="#quick-start">Создание меню</a>
+          <div class="nav__socialLinks">
+            <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+            <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <a href="#order" class="link-order">Заказать</a>
+         
+        </div>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__elements">
+        <div class="header__content">
+          <h1>
+            <span class="gradient-text">Интерактивное меню</span> для вашего кафе
+          </h1>
+          <ul>
+            <li>Ваше индивидуальное меню на нескольких языках</li>
+            <li>Вы можете легко менять цены</li>
+            <li>Ваши посетители не ожидают</li>
+          </ul>
+        </div>
+        <img src="./img/header__foto.png" alt="header-image">
+      </div>
+  </header>
+
+  <section class="what" id="what">
+    <div class="container">
+      <h2>Преимущества</h2>
+      <div class="what__item what__item_right">
+        <img src="./img/1.png" alt="">
+        <div class="what__text-block">
+          <h3>Привлечение внимания</h3>
+          <p>
+            Ваше кафе больше не останется незамеченным! Интерактивное меню с QR-кодом привлекает внимание посетителей, оставляя их клиентами. Простой сканер на двери открывает доступ к вашему меню, а  доступность интерфейса на разных языках убеждает каждого прохожего, что ваше кафе заботится о комфорте гостей.          
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/2.png" alt="">
+        <div class="what__text-block">
+          <h3>Меню на языке клиента</h3>
+          <p>
+            Покажите клиентам, что вы их понимаете! Ваше меню доступно на русском, английском, испанском и других языках. Теперь гости из разных стран смогут легко ознакомиться с вашими блюдами и делают выбор. Отсутствие родного языка на бумажном меню больше не отпугивает посетителей.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/3.png" alt="">
+        <div class="what__text-block">
+          <h3>Ваш клиент не ждёт</h3>
+          <p>
+            Сократите ожидание! Благодаря интерактивному меню, клиенты могут заранее выбрать блюда и добавить их в корзину. Это ускоряет процесс оформления заказа и позволяет гостям наслаждаться отдыхом без длительного ожидания.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/4.png" alt="">
+        <div class="what__text-block">
+          <h3>Ваше меню легко корректируется</h3>
+          <p>
+            Забудьте о сложностях с обновлением меню! Теперь всё, что нужно лишь отредактировать Google Таблицу, и изменения мгновенно появятся на сайте. Быстро, просто и без лишних затрат.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/5.png" alt="">
+        <div class="what__text-block">
+          <h3>Единое меню и уникальный дизайн для сети ваших кафе</h3>
+          <p>
+            Если у вас несколько кафе, поддерживать актуальность меню стало проще. Одно решение для всех заведений: обновляйте данные в одной таблице, и изменения автоматически применятся ко всей сети.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/6.png" alt="">
+        <div class="what__text-block">
+          <h3>Экономьте на печати меню</h3>
+          <p>
+            Сократите расходы на печати! С интерактивным меню вам больге не нужно заботится о бумажной версии. Достаточно разместить QR-коды в кафе, и ваши гости всегда будут видеть актуальную информацию.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/7.png" alt="">
+        <div class="what__text-block">
+          <h3>Современный имидж</h3>
+          <p>
+            Теперь ваше кафе в тренде и соотетсвует современным тенденциям. Интерактивное меню с QR-кодом это свидетельство явной заботы о ваших гостях и их комфорте. Теперь у вас есть конкурентное преимущество.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/8.png" alt="">
+        <div class="what__text-block">
+          <h3>Меньше ошибок в заказах</h3>
+          <p>
+            При самостоятельном заказа, снижается вероятность ошибки. В приложении клиент выберает желаемое блюдо и добавляет его в корзину, а не передает заказ устно, что повышает качество обслуживания и уменьшает вероятность недоразумений.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/9.png" alt="">
+        <div class="what__text-block">
+          <h3>Ваше интерактивное меню гарантирует безопасность</h3>
+          <p>
+            В условиях повышенного внимания к гигиене (например, после пандемии) клиенты чувствовуют себя безопасней, взаимодействуя с меню через телефон, а не с физическим носителем.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="container">
+      <h2>Кейсы</h2>
+      <div class="cases__list">
+        <a href="https://iqrmenu.github.io/CIAO-CACAO/" class="cases__item" target="_blank">
+          <img src="./img/cases__logo1.png" alt="">
+        </a>
+        <a href="https://iskanderbeycafe.github.io/menu/index.html" class="cases__item" target="_blank">
+          <img src="./img/cases__logo2.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="price">
+    <div class="container">
+      <h2>Цены</h2>
+      <div class="prices__list">
+        <div class="prices__item price-box">
+          <h4>Базовый</h4>
+          <p class="price-box__cost">
+            <span>3500 ₽</span>
+            в месяц
+          </p>
+          <p class="text_green">Это всего лишь 3-4 новых посетителя в месяц</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Доступ к базе данных
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Общий QR-код
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              3 языка
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Индивидуальный дизайн
+            </li>
+          </ul>
+        </div>
+        <div class="prices__item price-box price-box_pro">
+          <h4>Расширенный</h4>
+          <p class="price-box__cost">
+            <span>5000₽</span>
+            в месяц
+          </p>
+          <p class="text_green">Это всего лишь 5-6 новых посетителей в месяц</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Доступ к базе данных
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              QR-код для каждого стола
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Без ограничений по языкам
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Индивидуальный дизайн
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Функция заказа
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              Сбор анализа заказов
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-start" id="quick-start">
+    <div class="container">
+      <h2>Создание меню</h2>
+      <ol class="quick-start__list">
+        <li>
+          <h3>Оставьте свою заявку</h3>
+          <p>
+            Заполните <a href="#order">форму</a> на нашем сайте или напишите нам через <a
+              href="https://wa.me/5491161349627">WhatsApp</a>. Мы свяжемся с вами в течение 12 часов.
+          </p>
+        </li>
+        <li>
+          <h3>Отправьте необходимую информацию</h3>
+          <p>
+            Подготовьте ваше меню с описаниями и ценами на блюда, а также фотографии каждой порции.
+          </p>
+        </li>
+        <li>
+          <h3>Встреча и подписание контракта</h3>
+          <p>
+            Наш представитель встретится с вами для подписания <button class="open-contract">контракта</button> и
+            обсуждения всех деталей.
+          </p>
+        </li>
+        <li>
+          <h3>Создание меню в момент</h3>
+          <p>
+            После подписания контракта мы создадим ваше интерактивное меню и покажем, как его редактировать.
+          </p>
+        </li>
+        <li>
+          <h3>Загрузка меню в интернет</h3>
+          <p>
+            Ваше интерактивное меню будет доступно в интернете, чтобы ваши клиенты могли легко получить к нему доступ.
+          </p>
+        </li>
+        <li>
+          <h3>Генерация QR-кодов</h3>
+          <p>
+            Мы создаем QR-коды для вашего меню, делая его доступным быстро и просто.
+          </p>
+        </li>
+        <li>
+          <h3>Печать QR-кодов</h3>
+          <p>
+            Мы сами напечатаем их для вас: <br>
+            - <strong>Большой QR-код:</strong> Самоклеящаяся бумага для размещения в видимых местах, таких как вход.
+            <br>
+            - <strong>20 маленьких QR-кодов:</strong> Для каждого стола заведения. <br>
+            Мы также поможем вам разместить напечатанные QR-коды в вашем заведении.
+          </p>
+        </li>
+
+        <h3 class="quick-start__finish-title">Поздравляем, ваше интерактивное меню готово!</h3>
+
+        <li>
+          <h3>Дополнительные опции</h3>
+          <p>
+            Вы можете запросить дополнительные QR-коды: <br>
+            - Большой код — <strong>500 ₽</strong> <br>
+            - 10 маленьких кодов — <strong>5000 ₽</strong>
+          </p>
+        </li>
+        <li>
+          <h3>Ежемесячная оплата</h3>
+          <p>
+            Вам нужно будет только платить ежемесячный абонентский взнос в зависимости от выбранного тарифа.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="order">
+    <div class="container">
+      <h2>Заказать</h2>
+      <h3>Напишите нам, и мы свяжемся с вами в течение 24 часов</h3>
+      <div class="contact__list">
+        <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+        <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+        <a class="email" href="mailto:interactivemenuqr@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <form target="form-submit" method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAEOGmx-rY-vMroj6afvsC1keaW4Yxz76MikQ2gXXJCpNcIg/formResponse">
+        <iframe name="form-submit"></iframe>
+        <div class="form-submit">
+          <h3>Ваша заявка была отправлена</h3>
+        </div>
+        <label for="name">Ваше имя</label>
+        <input id="name" name="entry.1646956788" type="text" placeholder="Введите ваше имя" required>
+        <label for="tel">Ваш телефон</label>
+        <input id="tel" name="entry.1420576568" type="tel" placeholder="Введите ваш телефон" required value="+7">
+        <button type="submit">Отправить</button>
+        <p>
+          Ваши личные данные защищены. Полный текст политики конфиденциальности доступен <span
+            class="protection">здесь</span>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer__elements">
+        <div class="footer__contact">
+          <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+          <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i></a>
+            <!-- <a class="instagram" href="https://www.instagram.com/alex_it_teacher/"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+
+        <a class="footer__mailLink" href="mailto:interactivemenuqr@gmail.com">interactivemenuqr@gmail.com</a>
+
+        <a href="#header" class="footer__logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-block">
+    <div class="contract">
+      <h3>План контракта на услуги создания и управления интерактивным меню</h3>
+      <h4>1. Объект контракта</h4>
+      <ol>
+        <li>
+          <p><strong>Поставщик обязуется:</strong></p>
+          <ol>
+            <li>Создать интерактивное меню для кафе или ресторана.</li>
+            <li>Разработать сайт и приложение, которые будут отображать меню.</li>
+            <li>Настроить дизайн сайта в соответствии со стилем заведения клиента.</li>
+            <li>Создать таблицу для хранения и управления меню (Google Sheets).</li>
+            <li>Сгенерировать QR-коды, напечатать их и предоставить клиенту.</li>
+            <li>Обучить клиента использованию таблицы для изменения базы данных и меню.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Клиент обязуется:</strong></p>
+          <ol>
+            <li>Оплатить стоимость первого месяца услуг (включая настройку и запуск).</li>
+            <li>Предоставить меню, изображения порций и любую другую необходимую информацию.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>2. Этапы работы</h4>
+      <ol>
+        <li>
+          <p><strong>Первый этап (подготовка):</strong></p>
+          <ol>
+            <li>Клиент предоставляет меню и изображения блюд.</li>
+            <li>Поставщик согласовывает дизайн сайта.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Второй этап (создание и запуск):</strong></p>
+          <ol>
+            <li>Разработка сайта и приложения.</li>
+            <li>Настройка таблицы с базой данных меню.</li>
+            <li>Генерация и печать QR-кодов.</li>
+            <li>Передача QR-кодов клиенту.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Третий этап (обучение):</strong></p>
+          <ol>
+            <li>Обучение клиента управлению меню с помощью таблицы.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Четвертый этап (ежемесячное обслуживание):</strong></p>
+          <ol>
+            <li>Начиная со второго месяца, клиент оплачивает ежемесячную аренду меню в размере _____.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>3. Обязанности и права сторон</h4>
+      <ol>
+        <li>
+          <p><strong>Поставщик обязуется:</strong></p>
+          <ol>
+            <li>Выполнить все работы в срок, указанный в приложении к контракту.</li>
+            <li>Предоставить доступ к готовому меню и обучить клиента его редактированию.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>Клиент обязуется:</strong></p>
+          <ol>
+            <li>Своевременно предоставлять необходимую информацию для выполнения работы.</li>
+            <li>Оплачивать услуги в соответствии с условиями контракта.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>4. Стоимость и порядок оплаты</h4>
+      <ol>
+        <li>Оплата за первый месяц услуг составляет _____.</li>
+        <li>Ежемесячная аренда меню составляет _____, начиная со второго месяца.</li>
+        <li>Каждые 3 месяца будет пересчитываться сумма ежемесячной оплаты в зависимости от инфляции.</li>
+        <li>Оплата должна производиться до _____ числа каждого месяца.</li>
+      </ol>
+
+      <h4>5. Ответственность сторон</h4>
+      <ol>
+        <li>Поставщик не несет ответственности за ошибки или изменения, внесенные клиентом в таблицу.</li>
+        <li>Клиент обязуется не передавать доступ к базе данных третьим лицам.</li>
+      </ol>
+
+      <h4>6. Дополнительные условия</h4>
+      <ol>
+        <li>Все права на сайт и приложение принадлежат поставщику.</li>
+        <li>Клиент получает ограниченный доступ для редактирования меню.</li>
+        <li>В случае расторжения контракта клиент обязуется вернуть все предоставленные материалы (QR-коды и т.д.).</li>
+      </ol>
+
+      <h4>7. Срок действия контракта</h4>
+      <ol>
+        <li>Контракт вступает в силу с момента его подписания и будет действовать до выполнения обеими сторонами своих обязательств.</li>
+      </ol>
+
+      <h4>8. Подписи</h4>
+      <p>Поставщик: _____________</p>
+      <p>Клиент: ______________</p>
+    </div>
+    <div class="data-protection">
+      <h3>
+        Политика обработки персональных данных
+      </h3>
+      <h4>
+        1. УСЛОВИЯ И ЦЕЛИ ОБРАБОТКИ ИНФОРМАЦИИ
+      </h4>
+      <p>
+        Администратор сайта осуществляет обработку персональных данных пользователя с его согласия, с целью предоставления услуг, предлагаемых на сайте.
+      </p>
+      <h4>
+        2. ОБРАБОТКА ПЕРСОНАЛЬНЫХ ДАННЫХ ПОЛЬЗОВАТЕЛЕЙ
+      </h4>
+      <p>
+        Обработка персональных данных осуществляется на основе принципов:
+        <br>
+        a) Законности целей и методов обработки персональных данных и добросовестности;
+        <br>
+        b) Соответствия целей обработки персональных данных заранее определенным и заявленным при сборе персональных данных;
+        <br>
+        c) Соответствия объема и характера обрабатываемых персональных данных, методов обработки персональных данных и целей обработки;
+        <br>
+        d) Запрета на объединение баз данных, содержащих персональные данные, созданные для несовместимых целей.
+      </p>
+      <h4>
+        3. УДАЛЕНИЕ ПЕРСОНАЛЬНЫХ ДАННЫХ
+      </h4>
+      <p>
+        Персональные данные пользователя удаляются по письменному запросу пользователя в свободной форме, а также по усмотрению администратора сайта.
+      </p>
+      <h4>
+        4. МЕРЫ ЗАЩИТЫ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ
+      </h4>
+      <p>
+        Администратор сайта принимает технические и организационные меры, направленные на обеспечение защиты персональных данных пользователя от несанкционированного или случайного доступа, уничтожения, изменения, блокировки, копирования, распространения, а также от других незаконных действий.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

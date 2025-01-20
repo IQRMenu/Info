@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ka">
+
+<head>
+  <meta property="og:title" content="ინტერაქტიული მენიუ თქვენი კაფისთვის">
+  <meta property="og:description" content="თქვენი კაფე უფრო თანამედროვე და ტექნოლოგიური გამოჩნდება სტუმრების თვალში. ინტერაქტიული მენიუ QR კოდით ხაზს უსვამს, რომ თქვენ ზრუნავთ კომფორტზე და მიჰყვებით ტენდენციებს.">
+  <meta property="og:image" content="https://iqrmenu.github.io/InfoRU/img/header__foto.png">
+  <meta property="og:url" content="https://iqrmenu.github.io/InfoRU/">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IQRMenu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer=""></script>
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__elements">
+        <a href="#header" class="nav__logo">
+          <img src="./img/logo.png" alt="logo">
+        </a>
+        <div class="nav__links">
+          <a href="#what">პრეიმუსები</a>
+          <a href="#cases">კეისები</a>
+          <a href="#price">ფასი</a>
+          <a href="#quick-start">მენიუს შექმნა</a>
+          <div class="nav__socialLinks">
+            <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+            <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+          <a href="#order" class="link-order">შეკვეთა</a>
+         
+        </div>
+        <button class="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__elements">
+        <div class="header__content">
+          <h1>
+            <span class="gradient-text">ინტერაქტიული მენიუ</span> თქვენი კაფისთვის
+          </h1>
+          <ul>
+            <li>თქვენი ინდივიდუალური მენიუ რამდენიმე ენაზე</li>
+            <li>თქვენ შეგიძლიათ მარტივად შეცვალოთ ფასები</li>
+            <li>თქვენი სტუმრები არ ელოდებენ</li>
+          </ul>
+        </div>
+        <img src="./img/header__foto.png" alt="header-image">
+      </div>
+  </header>
+
+  <section class="what" id="what">
+    <div class="container">
+      <h2>პრეიმუსები</h2>
+      <div class="what__item what__item_right">
+        <img src="./img/1.png" alt="">
+        <div class="what__text-block">
+          <h3>ყურადღებას მოაგდებს</h3>
+          <p>
+            თქვენი კაფე აღარ დაინდორება უშენებელი! ინტერაქტიული მენიუ QR კოდით ყურადღებას მოაგდებს სტუმრებს, რაც მათ კლიენტებს გახდის. მარტივი სკანერი კაფის სასართის გახსნის წვდომას თქვენს მენიუს, ხოლო ინტერფეისის მრავალენოვანობა ყველა სტრუმას უსვამს, რომ თქვენი კაფე ზრუნავს სტუმრების კომფორტზე.          
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/2.png" alt="">
+        <div class="what__text-block">
+          <h3>მენიუ სტუმრის ენაზე</h3>
+          <p>
+            ჩვენებით გამოჩნდეთ, რომ თქვენ მათ გავიგებთ! თქვენი მენიუ ხელმისაწვდომია რუსული, ინგლისური, ესპანური და სხვა ენებზე. ახლა სტუმრები სხვადასხვა ქვეყნებიდან შეუძლიან მარტივად გაიგონ თქვენი კურსები და გააკეთონ არჩევანი. მენიუს ქართული ვერსია აღარ გამოიწვევს სტუმრებს.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/3.png" alt="">
+        <div class="what__text-block">
+          <h3>თქვენი კლიენტი არ ელოდებს</h3>
+          <p>
+            შეამცირეთ დამატებითი დრო! ინტერაქტიული მენიუს მეშვეობით, სტუმრებს შეუძლიან არანაირი დროში აირჩიონ კურსები და დაამატონ კალათაში. ეს ამარტივებს შეკვეთის პროცესს და საშუალებას გაძლევს სტუმრებს გაართონ სასურველი დრო უკუკავშიროდ.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/4.png" alt="">
+        <div class="what__text-block">
+          <h3>თქვენი მენიუ მარტივად შეიცვლება</h3>
+          <p>
+            დაგავიწყდეთ მენიუს განახლების რთულობები! ახლა თქვენ უბრალოდ უნდა შეცვალოთ Google ცხრილი, და ცვლილებები მომდევნოდ გამოჩნდებიან საიტზე. სწრაფი, მარტივი და უფასოდ.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/5.png" alt="">
+        <div class="what__text-block">
+          <h3>ერთი მენიუ და უნიკალური დიზაინი თქვენი კაფეების საკრებულოსთვის</h3>
+          <p>
+            თუ თქვენ გაქვთ რამდენიმე კაფე, მენიუს აქტუალობის მართვა უფრო მარტივი გახდა. ერთი გადაწყვეტილება ყველა დასასართში: განაახლეთ მონაცემები ერთ ცხრილში, და ცვლილებები ავტომატურად გამოიყენება საკრებულოში.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/6.png" alt="">
+        <div class="what__text-block">
+          <h3>ხარჯი შეამცირეთ მენიუს ბეჭდვაზე</h3>
+          <p>
+            შეამცირეთ ხარჯები ბეჭდვაზე! ინტერაქტიული მენიუს მეშვეობით თქვენ აღარ უნდა დაიზუსტოთ ქართული ვერსია. საკმარისი არის მხოლოდ QR კოდების მოთავსება კაფეში, რაც სტუმრებს ყოველთვის აძლევს აქტუალურ ინფორმაციას.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/7.png" alt="">
+        <div class="what__text-block">
+          <h3>მოდერნი იმიჯი</h3>
+          <p>
+            ახლა თქვენი კაფე ტრენდშია და შეესაბამება მოდერნი ტენდენციებს. ინტერაქტიული მენიუ QR კოდით ეს არის სამუშაოს სამუშაო დასამუშავებლად, რომ თქვენ ზრუნავთ თქვენს სტუმრებს და მათი კომფორტზე. ახლა თქვენ გაქვთ კონკურენციული პრეიმუსი.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_left">
+        <img src="./img/8.png" alt="">
+        <div class="what__text-block">
+          <h3>ნაკლები შეცდომები შეკვეთებში</h3>
+          <p>
+            სამუშავო შეკვეთის შემთხვევაში, შეცდომების შანსი შემცირდება. აპლიკაციაში სტუმრი აირჩევს სასურველ კურსს და დაამატებს კალათაში, არა უსთავს შეკვეთის გაცემა, რაც გააუმჯობესებს მომსახურების ხარისხს და შემცირებს არასწორი გამოვლენების შანსს.
+          </p>
+        </div>
+      </div>
+      <div class="what__item what__item_right">
+        <img src="./img/9.png" alt="">
+        <div class="what__text-block">
+          <h3>თქვენი ინტერაქტიული მენიუ უზრუნველყოფს უსაფრთხოებას</h3>
+          <p>
+            გიგიენის უმაღლესი ყურადღებას მიწოდებული პირობების შემთხვევაში (მაგალითად, პანდემიის შემდეგ) სტუმრები უსაფრთხოებით გამოიცნობენ, როდესაც მენიუს მეშვეობით მუშაობენ ტელეფონის გამოყენებით, არა ფიზიკურ მომსახურებლის გამოყენებით.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cases" id="cases">
+    <div class="container">
+      <h2>კეისები</h2>
+      <div class="cases__list">
+        <a href="https://iqrmenu.github.io/CIAO-CACAO/" class="cases__item" target="_blank">
+          <img src="./img/cases__logo1.png" alt="">
+        </a>
+        <a href="https://iskanderbeycafe.github.io/menu/index.html" class="cases__item" target="_blank">
+          <img src="./img/cases__logo2.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="prices" id="price">
+    <div class="container">
+      <h2>ფასი</h2>
+      <div class="prices__list">
+        <div class="prices__item price-box">
+          <h4>ბაზისი</h4>
+          <p class="price-box__cost">
+            <span>35 $</span>
+            თვეში
+          </p>
+          <p class="text_green">ეს არის მხოლოდ 3-4 ახალი სტუმრი თვეში</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ბაზის მონაცემთა ბაზასთან წვდომა
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ერთი საერთო QR კოდი
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              3 ენა
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ინდივიდუალური დიზაინი
+            </li>
+          </ul>
+        </div>
+        <div class="prices__item price-box price-box_pro">
+          <h4>გაფართოებული</h4>
+          <p class="price-box__cost">
+            <span>50 $</span>
+            თვეში
+          </p>
+          <p class="text_green">ეს არის მხოლოდ 5-6 ახალი სტუმრი თვეში</p>
+          <br>
+          <ul>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ბაზის მონაცემთა ბაზასთან წვდომა
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              QR კოდი თითოეული სასურველისთვის
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ენებზე შეზღუდვების გარეშე
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              ინდივიდუალური დიზაინი
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              შეკვეთის ფუნქცია
+            </li>
+            <li>
+              <i class="fa-solid fa-circle-check"></i>
+              შეკვეთების ანალიზის შეგროვება
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-start" id="quick-start">
+    <div class="container">
+      <h2>მენიუს შექმნა</h2>
+      <ol class="quick-start__list">
+        <li>
+          <h3>დატოვეთ თქვენი მოთხოვნა</h3>
+          <p>
+            შეავსეთ <a href="#order">ფორმა</a> ჩვენს საიტზე ან დაგვიკავშირდით <a
+              href="https://wa.me/5491161349627">WhatsApp</a>-ით. ჩვენ დაგიკავშირდებით 24 საათში.
+          </p>
+        </li>
+        <li>
+          <h3>გაგზავნეთ საჭირო ინფორმაცია</h3>
+          <p>
+            მოგვაწოდეთ თქვენი მენიუ თითოეული კურსის აღწერით და ფასით, ასევე თითოეული პორციის ფოტო.
+          </p>
+        </li>
+        <li>
+          <h3>შეხვედრა და დოგვერის ხელმოწერა</h3>
+          <p>
+            ჩვენი წარმომადგენელი შეგხვდებათ <button class="open-contract"> კონტრაქტის </button> ხელმოწერისა და ყველა დეტალის განხილვისთვის.
+          </p>
+        </li>
+        <li>
+          <h3>მენიუს შექმნა მომენტში</h3>
+          <p>
+            დოგვერის ხელმოწერის შემდეგ ჩვენ შევქმნით თქვენს ინტერაქტიულ მენიუს და გამოვიჩნებთ თავისუფალი რედაქტირების გზას.
+          </p>
+        </li>
+        <li>
+          <h3>მენიუს ინტერნეტში ატვირთვა</h3>
+          <p>
+            თქვენი ინტერაქტიული მენიუ იქნება ხელმისაწვდომი ინტერნეტში, რაც საშუალებას გაძლევს თქვენს სტუმრებს მარტივად მივიღონ წვდომა.
+          </p>
+        </li>
+        <li>
+          <h3>QR კოდების გენერირება</h3>
+          <p>
+            ჩვენ შევქმნით თქვენი მენიუს QR კოდებს, რაც მას აძლევს მარტივ და სწრაფად წვდომას.
+          </p>
+        </li>
+        <li>
+          <h3>QR კოდების ბეჭდვა</h3>
+          <p>
+            ჩვენ შევიტანთ მათ: <br>
+            - <strong>დიდი QR კოდი:</strong> ავტომატური ბეჭდვის ფილმი თქვენი დასასართის ხილული ადგილას, როგორიცაა სასართი.
+            <br>
+            - <strong>20 პატარა QR კოდი:</strong> თითოეული სასურველისთვის დასასართში. <br>
+            ჩვენ ასევე დაგეხმარებით QR კოდების სწორად დასასართში დასაყენებლად.
+          </p>
+        </li>
+
+        <h3 class="quick-start__finish-title">გილოცავთ, თქვენი ინტერაქტიული მენიუ დასრულებულია!</h3>
+
+        <li>
+          <h3>დამატებითი ოპციები</h3>
+          <p>
+            თქვენ შეგიძლიათ მოითხოვოთ დამატებითი QR კოდები: <br>
+            - დიდი კოდი - <strong>500 ₽</strong> <br>
+            - 10 პატარა კოდი - <strong>5000 ₽</strong>
+          </p>
+        </li>
+        <li>
+          <h3>ყოველთვიანი გადახდა</h3>
+          <p>
+            თქვენ უნდა გადაიხადოთ ყოველთვიანი აბონენტური გადასახდელი თარიფის მიხედვით.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="contact" id="order">
+    <div class="container">
+      <h2>შეკვეთა</h2>
+      <h3>დაგვიკავშირდით და ჩვენ დაგიკავშირდებით 24 საათში</h3>
+      <div class="contact__list">
+        <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+        <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i>
+        <a class="email" href="mailto:interactivemenuqr@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <form target="form-submit" method="post"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeAEOGmx-rY-vMroj6afvsC1keaW4Yxz76MikQ2gXXJCpNcIg/formResponse">
+        <iframe name="form-submit"></iframe>
+        <div class="form-submit">
+          <h3>თქვენი მოთხოვნა გაიგზავნა</h3>
+        </div>
+        <label for="name">თქვენი სახელი</label>
+        <input id="name" name="entry.1646956788" type="text" placeholder="შეიყვანეთ თქვენი სახელი" required>
+        <label for="tel">თქვენი ტელეფონი</label>
+        <input id="tel" name="entry.1420576568" type="tel" placeholder="შეიყვანეთ თქვენი ტელეფონი" required value="+995">
+        <button type="submit">გაგზავნა</button>
+        <p>
+          თქვენი პირადი ინფორმაცია დაცულია. სრული ტექსტი კონფიდენციალურობის პოლიტიკა ხელმისაწვდომია <span
+            class="protection">აქ</span>.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer__elements">
+        <div class="footer__contact">
+          <a class="telega" href="https://t.me/ZigAlex"><i class="fa-brands fa-telegram"></i></a>
+          <a class="whatsapp" href="https://wa.me/5491161349627"><i class="fa-brands fa-whatsapp"></i></a>
+            <!-- <a class="instagram" href="https://www.instagram.com/alex_it_teacher/"><i class="fa-brands fa-instagram"></i></a> -->
+        </div>
+
+        <a class="footer__mailLink" href="mailto:interactivemenuqr@gmail.com">interactivemenuqr@gmail.com</a>
+
+        <a href="#header" class="footer__logo">
+          <img src="./img/logo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-block">
+    <div class="contract">
+      <h3>პლანი ინტერაქტიული მენიუს სერვისის მისამართის შექმნის და მართვის კონტრაქტი</h3>
+      <h4>1. კონტრაქტის ობიექტი</h4>
+      <ol>
+        <li>
+          <p><strong>მიმწოდებელი ვადასტურებს:</strong></p>
+          <ol>
+            <li>შექმნას ინტერაქტიული მენიუ კაფეს ან რესტორანისთვის.</li>
+            <li>შევქმნას საიტი და აპლიკაცია, რომლებიც გამოიჩნდებიან მენიუ.</li>
+            <li>დიზაინის მიმართულება საიტი კლიენტის კაფის სტილის მიხედვით.</li>
+            <li>შევქმნას ცხრილი მენიუს შენახვისა და მართვისთვის (Google Sheets).</li>
+            <li>შევქმნას QR კოდები, დავბეჭდავთ და მივცეთ კლიენტს.</li>
+            <li>დავასწავლოთ კლიენტი ცხრილის გამოყენებით მენიუს მართვა.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>კლიენტი ვადასტურებს:</strong></p>
+          <ol>
+            <li>გადაიხადოს პირველი თვის სერვისის ფასი (რომელიც შეიცავს მომზადებას და გამშვებას).</li>
+            <li>მიიწოდოს მენიუ, პორციების სურათები და სხვა საჭირო ინფორმაცია.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>2. სერვისის ეტაპები</h4>
+      <ol>
+        <li>
+          <p><strong>პირველი ეტაპი (მომზადება):</strong></p>
+          <ol>
+            <li>კლიენტი მიწოდებს მენიუს და კურსების სურათებს.</li>
+            <li>მიმწოდებელი დაეთანხმება საიტის დიზაინის შესახებ.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>მეორე ეტაპი (შექმნა და გამშვება):</strong></p>
+          <ol>
+            <li>საიტის და აპლიკაციის დეველოპმენტი.</li>
+            <li>ცხრილის მომზადება მენიუს მონაცემთა ბაზისთვის.</li>
+            <li>QR კოდების გენერირება და ბეჭდვა.</li>
+            <li>QR კოდების მიწოდება კლიენტს.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>მესამე ეტაპი (სწავლება):</strong></p>
+          <ol>
+            <li>კლიენტის სწავლება ცხრილის გამოყენებით მენიუს მართვა.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>მეოთხე ეტაპი (ყოველთვიანი მომსახურება):</strong></p>
+          <ol>
+            <li>მეორე თვიდან, კლიენტი გადაიხადებს ყოველთვიანი მენიუს გადასახდელი თარიფი _____.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>3. მიმწოდებელის და კლიენტის უთვირთებები და უფლებები</h4>
+      <ol>
+        <li>
+          <p><strong>მიმწოდებელი ვადასტურებს:</strong></p>
+          <ol>
+            <li>შეასრულოს ყველა სერვისი მითითებულ ვადაში, რომელიც მითითებულია კონტრაქტის მიმაგრებში.</li>
+            <li>მიიწოდოს წვდომა დასრულებულ მენიუს და დავასწავლოთ კლიენტი მისი რედაქტირება.</li>
+          </ol>
+        </li>
+        <li>
+          <p><strong>კლიენტი ვადასტურებს:</strong></p>
+          <ol>
+            <li>მიიწოდოს საჭირო ინფორმაცია სერვისის შესრულებისთვის მომდევნოდ.</li>
+            <li>გადაიხადოს სერვისი კონტრაქტის მიხედვით.</li>
+          </ol>
+        </li>
+      </ol>
+
+      <h4>4. სერვისის ფასი და გადახდის რეგულირება</h4>
+      <ol>
+        <li>პირველი თვის სერვისის ფასი არის _____.</li>
+        <li>ყოველთვიანი მენიუს გადასახდელი თარიფი არის _____, მეორე თვიდან.</li>
+        <!-- <li>ყოველ 3 თვეში განაახლებული იქნება ყოველთვიანი გადასახდის თარიფი ინფლაციის მიხედვით.</li> -->
+        <li>გადახდა უნდა შესრულდეს _____ თვის დღეს.</li>
+      </ol>
+
+      <h4>5. მიმწოდებელის და კლიენტის პასუხისმგებლობა</h4>
+      <ol>
+        <li>მიმწოდებელი არ იყიდება პასუხისმგებლობას ცხრილში შესატყვისი ცვლილებების შემთხვევაში, რომლებიც შეიტანა კლიენტი.</li>
+        <li>კლიენტი ვადასტურებს, რომ არ გადააცემს მონაცემთა ბაზის წვდომას სამსახურის სხვა პირებს.</li>
+      </ol>
+
+      <h4>6. დამატებითი პირობები</h4>
+      <ol>
+        <li>საიტის და აპლიკაციის ყველა უფლება ეკუთვნის მიმწოდებელს.</li>
+        <li>კლიენტს მიიცებს შეზღუდული წვდომა მენიუს რედაქტირებისთვის.</li>
+        <li>კონტრაქტის გაუქმების შემთხვევაში კლიენტი ვადასტურებს, რომ მიიღებს ყველა მიწოდებულ მასალას (QR კოდები და ა.შ.).</li>
+      </ol>
+
+      <h4>7. კონტრაქტის მოქმედების ვადა</h4>
+      <ol>
+        <li>კონტრაქტი მოქმედებს კონტრაქტის ხელმოწერის დროს და მოქმედებს სანამ ორივე მხარე შეასრულებს მისი ვადასტურებულ უთვირთებებს.</li>
+      </ol>
+
+      <h4>8. ხელმოწერები</h4>
+      <p>მიმწოდებელი: _____________</p>
+      <p>კლიენტი: ______________</p>
+    </div>
+    <div class="data-protection">
+      <h3>
+        პირადი ინფორმაციის დამუშავების პოლიტიკა
+      </h3>
+      <h4>
+        1. ინფორმაციის დამუშავების პირობები და მიზანი
+      </h4>
+      <p>
+        საიტის ადმინისტრატორი მომხმარებლის პირადი ინფორმაციის დამუშავებას მომხმარებლის შეთანხმებით განხორციელებს საიტზე გამოყენებული სერვისების მისაღებად.
+      </p>
+      <h4>
+        2. მომხმარებლის პირადი ინფორმაციის დამუშავება
+      </h4>
+      <p>
+        პირადი ინფორმაციის დამუშავება მოხდება შემდეგი პრინციპების მიხედვით:
+        <br>
+        a) ინფორმაციის დამუშავების მიზანის და მეთოდების საკრედიტობა და სამომავლობლობა;
+        <br>
+        b) ინფორმაციის დამუშავების მიზანის და მითითებული პირადი ინფორმაციის შეგროვების დროს განსაზღვრული და გამოცხადებული მიზანების შესაბამისობა;
+        <br>
+        c) დამუშავებული პირადი ინფორმაციის და ინფორმაციის დამუშავების მეთოდების და ინფორმაციის დამუშავების მიზანების შესაბამისობა;
+        <br>
+        d) სხვადასხვა მიზანების მიზნის მონაცემთა ბაზების ერთმანეთის გაერთიანების აკრძალვა.
+      </p>
+      <h4>
+        3. პირადი ინფორმაციის წაშლა
+      </h4>
+      <p>
+        მომხმარებლის პირადი ინფორმაცია წაშლის მოთხოვნის შემთხვევაში ან ადმინისტრატორის მიერ წაშლის გამო, რომელიც მიიღება ადმინისტრატორის მიერ.
+      </p>
+      <h4>
+        4. მომხმარებლის ინფორმაციის დაცვის ზოგადობის მერები
+      </h4>
+      <p>
+        ადმინისტრატორი მომხმარებლის პირადი ინფორმაციის უარყოფითი ან შემთხვევითი წვდომის, გაუქმების, შეცვლის, ბლოკირების, კოპირების ან სხვა არასაკრედიტო მოქმედებებისგან დაცვის ტექნიკური და ორგანიზაციული მერები აკეთებს.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
